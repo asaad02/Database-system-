@@ -165,7 +165,7 @@ int main(int argc, char *argv[]){
 
         int capacity1 = get_capacity(khs); 
         fseek( khs, 0, SEEK_SET );                   // seek to the first of the file 
-        hashkey =hashfn(key, capacity1 );
+         t =hashfn(key, capacity1 );
         char num[STRLEN];
         while( hashkey  < capacity1 ) // loop until the match 
         {
